@@ -1,0 +1,59 @@
+* {
+    font-family: "Arvo", serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@media only screen and (max-width: 371px) {
+    .top-header {
+        background-color: lightyellow !important;
+        font-size: 15px;
+    }
+    .navbar-toggler-icon {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 353px) {
+    .top-header {
+        background-color: yellow !important;
+        font-size: 13px;
+    }
+
+    .navbar-toggler-icon {
+        font-size: 15px;
+    }
+}
+
+.img-zoom:hover {
+    transform: scale(1.5);
+}
+
+.signup {
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+@media only screen and (max-width: 767px) {
+    .signup {
+        height: 700px;
+        width: 400px;
+        margin: 0 auto;
+        margin-bottom: 60px;
+    }
+
+    .login {
+        height: 500px;
+        width: 400px !important;
+        margin: 0 auto;
+        margin-bottom: 60px;
+    }
+}
+
+.login {
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+}

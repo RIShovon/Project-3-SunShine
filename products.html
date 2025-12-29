@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SunShine</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="text-secondary-emphasis">
+    <header class="sticky-top sticky-lg-top sticky-md-top sticky-sm-top">
+        <div class="top-header bg-warning">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <a href="#" class="text-decoration-none text-dark pe-3">My Account</a>
+                        <a href="#" class="text-decoration-none text-dark">Wish List</a>
+                    </div>
+                    <div class="col text-end">
+
+                        <a href="login.html" class="text-decoration-none text-dark pe-3">Login</a>
+                        <a href="signup.html" class="text-decoration-none text-dark">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="images/logo-main1.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll fs-5"
+                        style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark active" aria-current="page" href="products.html">Protucts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="products-details.html">Products Details</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="signup.html">Sign Up</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="login.html">Login</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn text-dark fw-semibold btn-outline-warning" type="submit">Search</button>
+                    </form>
+                    <!-- ms-1 = margin start, me= margin end -->
+                    <button class="btn text-dark fw-semibold btn-outline-warning ms-2" type="submit">Add to
+                        Cart</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container py-4">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Products</li>
+            </ol>
+        </nav>
+    </div>
+
+
+    <!-- Products -->
+    <section>
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-12">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item bg-info">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button bg-info fw-bold" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Glasses
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body text-light">
+                                    Number One
+                                </div>
+                                <div class="accordion-body text-light">
+                                    Number Two
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-info fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    SunGlasses
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body bg-info text-light">
+                                    Number Three
+                                </div>
+                                <div class="accordion-body bg-info text-light">
+                                    Number Four
+                                </div>
+                                <div class="accordion-body bg-info text-light">
+                                    Number Five
+                                </div>
+                                <div class="accordion-body bg-info text-light">
+                                    Number Six
+                                </div>
+                                <div class="accordion-body bg-info text-light">
+                                    Number Seven
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-8 col-sm-12">
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card">
+                                <img src="images/Card WI/1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Number One<i class="fas fa-dice-one"></i></h5>
+                                    <strong>Price :</strong> 9,500tk <del> 10,500tk </del>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card’s content.</p>
+                                    <a href="#" class="btn text-dark fw-semibold bg-info">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card">
+                                <img src="images/Card WI/2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Number Two</h5>
+                                    <strong>Price :</strong> 29,500tk <del> 30,500tk </del>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card’s content.</p>
+                                    <a href="#" class="btn text-dark fw-semibold bg-info">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card">
+                                <img src="images/Card WI/3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Number Three</h5>
+                                    <strong>Price :</strong> 24,299tk <del> 25,000tk </del>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card’s conten. Lorem ipsum dolor sit amet.</p>
+                                    <a href="#" class="btn text-dark fw-semibold bg-info">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card">
+                                <img src="images/Card WI/4.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Number Four</h5>
+                                    <strong>Price :</strong> 9,800tk <del> 11,300tk </del>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card’s content.</p>
+                                    <a href="#" class="btn text-dark fw-semibold bg-info">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card">
+                                <img src="images/Card WI/5.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Number Five</h5>
+                                    <strong>Price :</strong> 32,499tk <del> 33,000tk </del>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card’s content.</p>
+                                    <a href="#" class="btn text-dark fw-semibold bg-info">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card">
+                                <img src="images/Card WI/6.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Number Six</h5>
+                                    <strong>Price :</strong> 48,990tk <del> 50,000tk </del>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card’s content.</p>
+                                    <a href="#" class="btn text-dark fw-semibold bg-info">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card">
+                                <img src="images/Card WI/1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Number One<i class="fas fa-dice-one"></i></h5>
+                                    <strong>Price :</strong> 9,500tk <del> 10,500tk </del>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card’s content.</p>
+                                    <a href="#" class="btn text-dark fw-semibold bg-info">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card">
+                                <img src="images/Card WI/2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Number Two</h5>
+                                    <strong>Price :</strong> 29,500tk <del> 30,500tk </del>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card’s content.</p>
+                                    <a href="#" class="btn text-dark fw-semibold bg-info">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card">
+                                <img src="images/Card WI/3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Number Three</h5>
+                                    <strong>Price :</strong> 24,299tk <del> 25,000tk </del>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card’s conten. Lorem ipsum dolor sit amet.</p>
+                                    <a href="#" class="btn text-dark fw-semibold bg-info">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card">
+                                <img src="images/Card WI/4.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Number Four</h5>
+                                    <strong>Price :</strong> 9,800tk <del> 11,300tk </del>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card’s content.</p>
+                                    <a href="#" class="btn text-dark fw-semibold bg-info">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card">
+                                <img src="images/Card WI/5.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Number Five</h5>
+                                    <strong>Price :</strong> 32,499tk <del> 33,000tk </del>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card’s content.</p>
+                                    <a href="#" class="btn text-dark fw-semibold bg-info">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card">
+                                <img src="images/Card WI/6.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Number Six</h5>
+                                    <strong>Price :</strong> 48,990tk <del> 50,000tk </del>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card’s content.</p>
+                                    <a href="#" class="btn text-dark fw-semibold bg-info">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+
+    <Footer class="py-4 bg-secondary">
+        <div class="container">
+            <p class="text-light text-center m-0">SunShine @ Copyright 2025. All rights resarved to RIShovon</p>
+        </div>
+    </Footer>
+    <script src="Bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
